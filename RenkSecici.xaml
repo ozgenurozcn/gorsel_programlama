@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Görsel_Programlama_Ödev.RenkSecici"
+             Title="RenkSecici"
+             x:Name="FlexLayout2">
+
+    <VerticalStackLayout>
+        <FlexLayout Direction="Column"
+                    JustifyContent="Center" 
+                    Margin="20"
+                    Padding="20"
+                    BackgroundColor="LightGray">
+            <Label Text="Renk Seçiçi"
+                   TextColor="WhiteSmoke"
+                   BackgroundColor="Black"
+                   Padding="20"
+                   Margin="20"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Kırmızı Ton:"
+                   TextColor="Red"/>
+
+            <Slider MinimumTrackColor="Red"
+                    x:Name="RedSlider"
+                    Minimum="0"
+                    Maximum="255"
+                    ValueChanged="RedSlider_ValueChanged"/>
+
+            <Label Text="Yeşil Ton"
+                   TextColor="Green"/>
+
+            <Slider MinimumTrackColor="Green"
+                    x:Name="GreenSlider"
+                    Minimum="0"
+                    Maximum="255"
+                    ValueChanged="GreenSlider_ValueChanged"/>
+
+            <Label Text="Mavi Ton"
+                   TextColor="Blue"/>
+
+            <Slider MinimumTrackColor="Blue"
+                    x:Name="BlueSlider"
+                    Minimum="0"
+                    Maximum="255"
+                    ValueChanged="BlueSlider_ValueChanged"/>
+
+            <Label Text=""
+                   x:Name="RenkKodu"
+                   />
+            <ImageButton Source="copyicon.jpg" Clicked="ImageButton_Clicked"
+                         HorizontalOptions="Start"
+                         WidthRequest="10"
+                         HeightRequest="10"/>
+
+            <Button Text="Karıştır"
+                    Clicked="Button_Clicked"/>
+
+
+        </FlexLayout>
+
+
+    </VerticalStackLayout>
+</ContentPage>
