@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Görsel_Programlama_Ödev.MainPage"
+             BackgroundColor="Beige" >
+    <ScrollView>
+         <VerticalStackLayout VerticalOptions="Center">
+
+            <Grid RowDefinitions="Auto, Auto, Auto,*" ColumnDefinitions="Auto, Auto, Auto,*">
+
+                <Image Source="ozge_nur_ozcan.jpg"
+                       Grid.Row="0"
+                       Grid.Column="0"
+                       HorizontalOptions="Center"/>
+
+                <Label Text="Özge Nur ÖZCAN"
+                       Grid.Row="2"
+                       Grid.Column="0"
+                       TextColor="RosyBrown"
+                       SemanticProperties.HeadingLevel="Level1"
+                       />
+                <Label Text="Bartın Üniverstesi Bilgisayar Mühendisliği"
+                       Grid.Row="3"
+                       Grid.Column="0"
+                       TextColor="RosyBrown"
+                       SemanticProperties.HeadingLevel="Level2"/>
+            </Grid>
+
+
+
+        </VerticalStackLayout>       
+    </ScrollView>
+
+
+</ContentPage>
